@@ -1290,6 +1290,25 @@ body {
   margin: 0 auto;
 }
 
+.contact.common .sec .confirm__title,
+.contact.common .sec .done__title,
+.contact.common .sec .err__title {
+  margin: 0 0 30px;
+  font-family: "Noto Sans JP";
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.contact.common .sec .err__title {
+  color: #f00;
+}
+
+.contact.common .sec .err {
+  padding: 5px 0 0;
+  color: #f00;
+  font-weight: bold;
+}
+
 .contact.common .sec .contact__txt {
   margin: 0 0 50px;
   font-family: "Noto Sans JP";
