@@ -1,0 +1,253 @@
+/* =================contactページ==================== */
+.contact.common {
+    /* ================key=============== */
+    .key {
+
+
+        &__inner {
+            background: url(../images/heading-img_contact.png) center top/cover no-repeat;
+        }
+
+        &__txt {
+            transform: translateX(49%);
+            font-family: "游ゴシック体";
+        }
+
+        @media screen and (max-width: 900px) {
+
+            &__txt {
+
+                .title {
+                    font-size: 60px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+
+                &__inner {
+                    background: url(../images/contact-key-tb.png) center top/cover no-repeat;
+                }
+    
+                &__txt {
+                    top: 132px;
+                    transform: translateX(50%);
+
+                    .title {
+                        font-size: 52px;
+                    }
+                }
+
+                @media screen and (max-width: 630px) {
+
+                    &__txt {
+                        transform: translateX(25%);
+                    }
+
+                    @media screen and (max-width: 375px) {
+
+                        &__inner {
+                            background: url(../images/contact-key-sp.png) center top/cover no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    /* ================sec================ */
+    .sec {
+        width: 700px;
+        padding: 120px 0;
+        margin: 0 auto;
+
+        .contact__txt {
+            margin: 0 0 50px;
+            font-family: $noto;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+        }
+
+        .must {
+            padding: 0 5px;
+            margin: 0 0 0 10px;
+            background: #333;
+            color: #fff;
+            font-family: $noto;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .radiobtn,
+        .i-txt,
+        .txtarea,
+        .privacy,
+        .checkagree {
+            margin: 0 0 40px;
+        }
+
+        .radiotitle,
+        .i-txt > label {
+            font-family: $noto;
+            font-weight: bold;
+            letter-spacing: 0.04em;
+        }
+
+        .radiobtn {
+
+            .radiotitle {
+                margin: 0 0 20px;
+            }
+
+            .radioitem {
+                display: inline-block;
+                
+
+                &:nth-of-type(3),
+                &:nth-of-type(4) {
+                    margin: 0 50px 0 0;
+                }
+
+                &:nth-of-type(2) {
+                    margin: 0 50px 0 10px;
+                }
+            }
+    
+            input[type="radio"] {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        .i-txt {
+
+            label {
+                display: inline-block;
+                margin: 0 0 8px;
+            }
+
+            input {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                line-height: 2.5;
+            }
+        }
+
+        .txtarea {
+
+            label {
+                display: inline-block;
+                margin: 0 0 8px;
+                font-family: $noto;
+                font-weight: bold;
+            }
+
+            textarea {
+                display: block;
+                width: 100%;
+                height: 212px;
+                font-family: "游ゴシック体";
+                line-height: 1.5;
+            }
+        }
+
+        .privacy {
+
+            &__title {
+                margin: 0 0 10px;
+                font-family: $mon;
+                font-weight: 800;
+                letter-spacing: 0.04em;
+            }
+
+            &__body {
+                width: 100%;
+                height: 252px;
+                padding: 10px 10px 0;
+                border: 1px solid #333;
+                box-sizing: border-box;
+                overflow-y: scroll;
+                font-family: $noto;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+            }
+        }
+
+        .checkagree {
+            text-align: center;
+
+            input {
+                margin: 0 10px 0 0;
+            }
+
+            label {
+                font-family: $noto;
+                letter-spacing: 0.04em;
+            }
+        }
+
+        .submitbtn {
+            text-align: center;
+
+            input {
+                padding: 11px 66px;
+                background: #000;
+                font-family: $mon;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+
+            width: 100%;
+            padding: 120px 50px;
+            box-sizing: border-box;
+
+            @media screen and (max-width: 768px) {
+
+                padding:135px 50px 197px;
+
+                @media screen and (max-width: 550px) {
+
+                    padding: 80px 15px;
+
+                    .contact__txt {
+                        font-size: 14px;
+                    }
+
+                    .radiobtn {
+
+                        .radioitem {
+                            display: block;
+
+                            &:nth-of-type(2),
+                            &:nth-of-type(3),
+                            &:nth-of-type(4),
+                            &:nth-of-type(5) {
+                                margin: 0 0 15px 14px;
+                            }
+                        }
+                    }
+
+                    .privacy {
+                        
+                        &__body {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .checkagree {
+
+                        label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
